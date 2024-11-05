@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --orange01: rgb(255, 140, 0);
+}
+
+.logo-img {
+    width: 5rem;
+    border-radius: 1rem;
+}
+
+.players-container {
+    background-color: var(--orange01);
+}
+
+.player-container {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.img-player {
+    width: 14rem;
+    height: 14rem;
+}
+
+.player-social-media i {
+    font-size: 2rem;
+}
+
+.carousel-item img {
+    height: 32rem;
+}
+
+a:hover {
+    opacity: .5;
+}
+
+/* Animaciones */
+.resize-container {
+    transition: transform ease .5s, box-shadow ease .5s, margin ease .5s;
+}
+
+.resize-container:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 2px 5px 5px  rgb(213, 213, 213);
+    
+}
+
+.opacity {
+    animation: appear ease 1.5s;
+}
+
+.custom-popover {
+    background-color: red;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.left-animation {
+    animation: appear-from-right ease 1s;
+}
+
+@keyframes appear-from-right {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@media (max-width: 60px) {
+    img {
+        width: 14rem; 
+    }
+}
+
+
+
